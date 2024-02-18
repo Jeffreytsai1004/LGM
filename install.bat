@@ -6,7 +6,8 @@
 :: 需要 xformers！ 详情请参阅 https://github.com/facebookresearch/xformers for details.
 :: for example, we use torch 2.1.0 + cuda 18.1
 :: 例如: 我们使用torch 2.1.0 + cuda 18.1
-@CALL pip install torch==2.1.0+cu118 torchvision torchaudio xformer --index-url https://download.pytorch.org/whl/cu118
+@CALL pip install torch==2.1.0+cu118 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+@CALL pip install -r requirements.txt
 
 :: Clone LGM
 @CALL git clone https://github.com/3DTopia/LGM
