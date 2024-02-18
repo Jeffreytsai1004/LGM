@@ -15,8 +15,7 @@ https://github.com/3DTopia/LGM/assets/25863658/cf64e489-29f3-4935-adba-e393a24c2
 * gaussians: [demo](https://replicate.com/camenduru/lgm) | [code](https://github.com/camenduru/LGM-replicate)
 * mesh: [demo](https://replicate.com/camenduru/lgm-ply-to-glb) | [code](https://github.com/camenduru/LGM-ply-to-glb-replicate)
 
-Thanks [@camenduru](https://github.com/camenduru)!
-谢谢 [@camenduru](https://github.com/camenduru)!
+Thanks 谢谢 [@camenduru](https://github.com/camenduru)!
 
 ### Install
 ### 安装
