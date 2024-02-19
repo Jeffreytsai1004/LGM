@@ -3,5 +3,5 @@
 :: Launch the WebUI
 :: 启动网页
 @CALL cd LGM
-@CALL python -B app.py big --resume pretrained/model_fp16.safetensors
+@CALL python -B app.py big --xformers --resume pretrained/model_fp16.safetensors --port 8086
 @CALL PAUSE
