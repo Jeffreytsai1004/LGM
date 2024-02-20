@@ -3,5 +3,9 @@
 :: Launch the WebUI
 :: 启动网页
 @CALL cd LGM
-@CALL python -B app.py big --xformers --resume pretrained/model_fp16.safetensors --port 8086
+:: Launch the WebUI
+:: 启动网页
+:: gradio app for both text/image to 3D
+python app.py big --workspace workspace --test_path data_test
+
 @CALL PAUSE

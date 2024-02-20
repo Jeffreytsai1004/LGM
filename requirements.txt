@@ -1,4 +1,3 @@
-torch
 numpy
 tyro
 diffusers
@@ -26,3 +25,17 @@ kiui >= 0.2.3
 xatlas
 roma
 plyfile
+
+resolver
+addict
+future
+lmdb
+opencv-python
+tb-nightly
+yapf
+lmdb
+timm
+cachetools
+pyasn1-modules
+rsa
+oauthlib
