@@ -33,9 +33,10 @@ lmdb
 opencv-python
 tb-nightly
 yapf
-lmdb
 timm
 cachetools
 pyasn1-modules
 rsa
+urllib3
 oauthlib
+google-auth

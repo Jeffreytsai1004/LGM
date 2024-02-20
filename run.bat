@@ -6,6 +6,5 @@
 :: Launch the WebUI
 :: 启动网页
 :: gradio app for both text/image to 3D
-python app.py big --workspace workspace --test_path data_test
-
+python app.py
 @CALL PAUSE
