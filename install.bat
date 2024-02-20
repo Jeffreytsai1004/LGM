@@ -2,6 +2,11 @@
 @CALL "%~dp0micromamba.exe" shell init --shell=cmd.exe --prefix="%~dp0\"
 @CALL condabin\micromamba.bat activate lgm-venv-001
 
+:: Set environment variables
+@CALL set GDOWN_CACHE=cache\gdown
+@CALL set TORCH_HOME=cache\torch
+@CALL set HF_HOME=cache\huggingface
+@CALL set PYTHONDONTWRITEBYTECODE=1
 
 :: Install dependencies
 :: 安装依赖
@@ -17,17 +22,15 @@
 
 :: Clone LGM
 @CALL git clone https://github.com/3DTopia/LGM
-@CALL cd LGM
 
+@CALL cd LGM
 :: a modified gaussian splatting (+ depth, alpha rendering)
 :: 修改后的 gaussian splatting （+ depth、alpha 渲染）
 @CALL git clone --recursive https://github.com/ashawkey/diff-gaussian-rasterization
 @CALL pip install ./diff-gaussian-rasterization
-
 :: for mesh extraction
 :: 用于网格提取
 @CALL pip install git+https://github.com/NVlabs/nvdiffrast
-
 :: download pretrained model
 :: 下载预训练模型
 @CALL mkdir pretrained
@@ -36,6 +39,6 @@
 
 :: Launch the WebUI
 :: 启动网页
-python app.py
+@CALL python -B app.py big
 
 @CALL PAUSE
